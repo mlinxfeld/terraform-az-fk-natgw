@@ -10,7 +10,7 @@ private subnets and backend workloads.
 These examples deliberately focus on **egress design patterns** and avoid
 enterprise abstractions or platform shortcuts.
 
-They are part of the **FoggyKitchen.com training ecosystem** and are used across:
+They are part of the **[FoggyKitchen.com training ecosystem](https://foggykitchen.com/courses-2/)** and are used across:
 
 - Azure Fundamentals with Terraform / OpenTofu  
 - Azure Networking & Security design notes  
@@ -93,12 +93,12 @@ The goal is **clarity and correctness**, not completeness.
 
 ## 🔗 Related Modules & Training
 
-- terraform-az-fk-natgw (this repository)  
-- terraform-az-fk-vnet  
-- terraform-az-fk-nsg  
-- terraform-az-fk-loadbalancer  
-- terraform-az-fk-compute  
-- terraform-az-fk-aks  
+- [terraform-az-fk-natgw](https://github.com/mlinxfeld/terraform-az-fk-natgw) (this repository)  
+- [terraform-az-fk-vnet](https://github.com/mlinxfeld/terraform-az-fk-vnet)  
+- [terraform-az-fk-nsg](https://github.com/mlinxfeld/terraform-az-fk-nsg)  
+- [terraform-az-fk-loadbalancer](https://github.com/mlinxfeld/terraform-az-fk-loadbalancer)  
+- [terraform-az-fk-compute](https://github.com/mlinxfeld/terraform-az-fk-compute)  
+- [terraform-az-fk-aks](https://github.com/mlinxfeld/terraform-az-fk-aks)  
 
 ---
 
@@ -110,4 +110,3 @@ See `LICENSE` for details.
 ---
 
 © 2026 FoggyKitchen.com — Cloud. Code. Clarity.
-

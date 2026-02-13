@@ -2,7 +2,7 @@
 
 This repository contains a reusable **Terraform / OpenTofu module** and progressive examples for deploying an **Azure NAT Gateway** and attaching it to **private subnets** to provide **controlled, predictable outbound connectivity** for private workloads.
 
-It is part of the **FoggyKitchen.com training ecosystem** and is designed as a dedicated **egress boundary layer** for Azure workloads.
+It is part of the **[FoggyKitchen.com training ecosystem](https://foggykitchen.com/courses-2/)** and is designed as a dedicated **egress boundary layer** for Azure workloads.
 
 ---
 
@@ -106,6 +106,7 @@ module "natgw" {
 | Output | Description |
 |--------|-------------|
 | `nat_gateway_id` | ID of the created NAT Gateway |
+| `nat_gateway_name` | Name of the NAT Gateway |
 | `public_ip_id` | ID of the NAT Gateway public IP |
 | `public_ip_address` | Public IP used for outbound SNAT |
 | `subnet_association_ids` | IDs of subnet-NATGW association resources (if any) |
@@ -128,12 +129,12 @@ This repository intentionally avoids abstractions that hide NAT Gateway mechanic
 
 ## 🧩 Related Modules & Training
 
-- terraform-az-fk-vnet  
-- terraform-az-fk-nsg  
-- terraform-az-fk-loadbalancer  
-- terraform-az-fk-compute  
-- terraform-az-fk-storage  
-- terraform-az-fk-aks  
+- [terraform-az-fk-vnet](https://github.com/mlinxfeld/terraform-az-fk-vnet)  
+- [terraform-az-fk-nsg](https://github.com/mlinxfeld/terraform-az-fk-nsg)  
+- [terraform-az-fk-loadbalancer](https://github.com/mlinxfeld/terraform-az-fk-loadbalancer)  
+- [terraform-az-fk-compute](https://github.com/mlinxfeld/terraform-az-fk-compute)  
+- [terraform-az-fk-storage](https://github.com/mlinxfeld/terraform-az-fk-storage)  
+- [terraform-az-fk-aks](https://github.com/mlinxfeld/terraform-az-fk-aks)  
 
 Used across:
 
