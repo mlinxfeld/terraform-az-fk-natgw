@@ -13,8 +13,8 @@ This example establishes the **clean baseline for private workloads that still r
 
 ## 🧭 Architecture Overview
 
-This deployment assumes that a Virtual Network already exists
-(e.g. created using the `terraform-az-fk-vnet` module).
+This deployment creates a Virtual Network using the
+`terraform-az-fk-vnet` module.
 
 The Virtual Network contains:
 - a **private subnet** for workloads,
@@ -29,11 +29,12 @@ All outbound traffic flows through the **NAT Gateway public IP**.
 *Figure 1. Private subnet with NAT Gateway providing outbound Internet access for private VMs.*
 
 This example creates:
-- A single **private Linux Virtual Machine**
-- A dedicated **Network Interface (NIC)**
-- A **NIC-level Network Security Group** 
-- An **Azure NAT Gateway** with a **public IP**
-- (Optional) **Azure Bastion** for private operator access
+- A **Virtual Network** and **subnets** via `terraform-az-fk-vnet`
+- A single **private Linux Virtual Machine** via `terraform-az-fk-compute`
+- A dedicated **Network Interface (NIC)** via `terraform-az-fk-compute`
+- A **NIC-level Network Security Group** via `terraform-az-fk-nsg`
+- An **Azure NAT Gateway** with a **public IP** via `terraform-az-fk-natgw`
+- (Optional) **Azure Bastion** via `terraform-az-fk-bastion` for private operator access
 - No public IP addresses on VMs
 - No Load Balancer
 - No autoscaling

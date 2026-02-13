@@ -98,6 +98,7 @@ The goal is **clarity and correctness**, not completeness.
 - [terraform-az-fk-nsg](https://github.com/mlinxfeld/terraform-az-fk-nsg)  
 - [terraform-az-fk-loadbalancer](https://github.com/mlinxfeld/terraform-az-fk-loadbalancer)  
 - [terraform-az-fk-compute](https://github.com/mlinxfeld/terraform-az-fk-compute)  
+- [terraform-az-fk-bastion](https://github.com/mlinxfeld/terraform-az-fk-bastion)  
 - [terraform-az-fk-aks](https://github.com/mlinxfeld/terraform-az-fk-aks)  
 
 ---
