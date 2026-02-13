@@ -1,5 +1,5 @@
 module "natgw" {
-  source = "../../" 
+  source = "github.com/mlinxfeld/terraform-az-fk-natgw" 
 
   name                = "fk-natgw"
   location            = azurerm_resource_group.foggykitchen_rg.location
